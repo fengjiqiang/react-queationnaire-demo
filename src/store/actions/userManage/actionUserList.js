@@ -96,7 +96,7 @@ const actionUserList = {
         let link = document.createElement('a');
         link.style.display = 'none';
         link.href = '';
-        link.setAttribute('download', '中债e联-导入用户模版.xlsx');
+        link.setAttribute('download', '导入用户模版.xlsx');
         document.body.appendChild(link);
         link.click();
     },

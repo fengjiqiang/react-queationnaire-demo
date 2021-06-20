@@ -197,7 +197,7 @@ class CmpQuestionList extends BaseCmp {
                 options={[
                     {label:'全部问题类型', value: 0},
                     {label:'业务咨询', value: 1},
-                    {label:'中债e联使用咨询', value: 2},
+                    {label:'使用咨询', value: 2},
                     {label:'其他', value: 3}
                 ]}
                 style={{ width: 150 }}

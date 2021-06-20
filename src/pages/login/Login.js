@@ -114,17 +114,9 @@ class Login extends BaseCmp {
     render() {
         return (
             <div className="login-container">
-                <img alt=''
-                    style={{ height: 348, width: 348 }}
-                    src={commonImg.login}
-                />
                 <div className="login-form">
-                    <img alt=''
-                        style={{ height: 80, width: 80 }}
-                        src={commonImg.logo}
-                    />
                     <div style={{ height: 33, fontSize: 24, fontWeight: 500, marginTop: 16, marginBottom: 60 }}>
-                        中债e联后台管理系统
+                        z止于至善后台管理系统
                     </div>
                     { this.login() }
                 </div>

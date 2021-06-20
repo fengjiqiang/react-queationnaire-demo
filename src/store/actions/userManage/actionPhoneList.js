@@ -30,7 +30,7 @@ const actionPhoneList = {
         let link = document.createElement('a');
         link.style.display = 'none';
         link.href = '';
-        link.setAttribute('download', '中债e联-固话导入模版.xlsx');
+        link.setAttribute('download', '固话导入模版.xlsx');
         document.body.appendChild(link);
         link.click();
     }

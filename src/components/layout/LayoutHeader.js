@@ -36,8 +36,7 @@ class LayoutHeader extends Component {
         return (
             <div style={this.props.style} className="appHead">
                 <div className="companyLogo" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-                    <img src={require('../../assets/images/logo2.png').default} alt="" style={{ width: 116, height: 42, marginLeft: 20 }}></img>
-                    {/* <span style={{ color: '#8f1d22', fontSize: 25, fontWeight: 500, marginLeft: 15 }}>中债云</span> */}
+                    <span style={{ color: '#8F1D22', fontSize: 20, fontWeight: 500, marginLeft: 15 }}>z止于至善后台管理系统</span>
                 </div>
                 <div className="personInfo" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', marginRight: 20 }}>
                     <div className="" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>

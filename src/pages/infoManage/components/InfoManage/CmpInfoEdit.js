@@ -762,7 +762,7 @@ class CmpInfoEdit extends BaseCmp {
                                             })
                                         }}
                                     />
-                                    <div style={{ marginLeft: 5 }}>若不填写，默认为中国债券信息网</div>
+                                        <div style={{ marginLeft: 5 }}>若不填写，默认为z止于至善</div>
                                 </div>
                             </RLFormItem> :
                             <RLFormItem

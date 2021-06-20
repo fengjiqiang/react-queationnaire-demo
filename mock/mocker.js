@@ -511,57 +511,6 @@ const proxy = {
             "msg": "请求成功"
         })
     },
-    'GET /api/v1/admin/system/banner/list': (req, res) => {
-        res.send({
-            "code": 200,
-            "data": {
-                "list": [
-                    {
-                        "id": 4,
-                        "title": "中债轮播一",
-                        "start_at": 1617256411,
-                        "end_at": 1617256411,
-                        "type": "index",
-                        "argue_type": 1,
-                        "is_show": 1,
-                        "click_count": 0,
-                        "created_at": "2021-04-01 13:58:55",
-                        "creator_id": 0,
-                        "creator": "测试"
-                    },
-                    {
-                        "id": 5,
-                        "title": "中债轮播二",
-                        "start_at": 1617256411,
-                        "end_at": 1617256411,
-                        "type": "index",
-                        "argue_type": 1,
-                        "is_show": 1,
-                        "click_count": 0,
-                        "created_at": "2021-04-01 13:58:55",
-                        "creator_id": 0,
-                        "creator": "测试"
-                    },
-                    {
-                        "id": 6,
-                        "title": "中债轮播三",
-                        "start_at": 1617256411,
-                        "end_at": 1617256411,
-                        "type": "index",
-                        "argue_type": 1,
-                        "is_show": 1,
-                        "click_count": 0,
-                        "created_at": "2021-04-01 13:58:55",
-                        "creator_id": 0,
-                        "creator": "测试"
-                    }
-                ],
-                "count": 1
-            },
-            "extra": [],
-            "msg": "请求成功"
-        })
-    },
     'POST /api/v1/admin/system/banner/del': (req, res) => {
         res.send({
             code: 200
@@ -994,7 +943,7 @@ const proxy = {
                 "approval_status": 1,
                 "status": 1,
                 "is_handle": 1,
-                "corp_name": "中债控股",
+                "corp_name": "z止于至善控股",
                 "department": "后勤部",
                 "position": "产品经理",
                 "email": "chinabond@boom.cn",
@@ -1188,7 +1137,7 @@ const proxy = {
                         "role_id": 1,
                         "mobile": "17610895009",
                         "email": "1134947683@qq.com",
-                        "corp_name": "中债控股",
+                        "corp_name": "z止于至善控股",
                         "approve_desc": "已认证",
                         "approve_status": 1,
                         "status": 1,
@@ -1203,7 +1152,7 @@ const proxy = {
                         "role_id": 1,
                         "mobile": "17610895009",
                         "email": "1134947683@qq.com",
-                        "corp_name": "中债控股",
+                        "corp_name": "z止于至善控股",
                         "approve_desc": "已认证",
                         "approve_status": 1,
                         "status": 1,
@@ -1218,7 +1167,7 @@ const proxy = {
                         "role_id": 1,
                         "mobile": "17610895009",
                         "email": "1134947683@qq.com",
-                        "corp_name": "中债控股",
+                        "corp_name": "z止于至善控股",
                         "approve_desc": "已认证",
                         "approve_status": 1,
                         "status": 1,
@@ -1233,7 +1182,7 @@ const proxy = {
                         "role_id": 1,
                         "mobile": "17610895009",
                         "email": "1134947683@qq.com",
-                        "corp_name": "中债控股",
+                        "corp_name": "z止于至善控股",
                         "approve_desc": "已认证",
                         "approve_status": 1,
                         "status": 1,
@@ -1248,7 +1197,7 @@ const proxy = {
                         "role_id": 1,
                         "mobile": "17610895009",
                         "email": "1134947683@qq.com",
-                        "corp_name": "中债控股",
+                        "corp_name": "z止于至善控股",
                         "approve_desc": "已认证",
                         "approve_status": 1,
                         "status": 1,
@@ -1368,31 +1317,31 @@ const proxy = {
                         "line": 18,
                         "nickname": "浓眉HI",//姓名
                         "mobile": "17610895009", // 手机号
-                        "company_name": "中债控股", // 机构名称
+                        "company_name": "z止于至善控股", // 机构名称
                     },
                     {
                         "line": 18,
                         "nickname": "浓眉HI",//姓名
                         "mobile": "17610895009", // 手机号
-                        "company_name": "中债控股", // 机构名称
+                        "company_name": "z止于至善控股", // 机构名称
                     },
                     {
                         "line": 18,
                         "nickname": "浓眉HI",//姓名
                         "mobile": "17610895009", // 手机号
-                        "company_name": "中债控股", // 机构名称
+                        "company_name": "z止于至善控股", // 机构名称
                     },
                     {
                         "line": 18,
                         "nickname": "浓眉HI",//姓名
                         "mobile": "17610895009", // 手机号
-                        "company_name": "中债控股", // 机构名称
+                        "company_name": "z止于至善控股", // 机构名称
                     },
                     {
                         "line": 18,
                         "nickname": "浓眉HI",//姓名
                         "mobile": "17610895009", // 手机号
-                        "company_name": "中债控股", // 机构名称
+                        "company_name": "z止于至善控股", // 机构名称
                     }
                 ],
                 "count": 1
@@ -4453,7 +4402,7 @@ const proxy = {
                 "e_title": "aaa",
                 "language": 1,
                 "start_time": 1616486058,
-                "content": '<p><div class="media-wrap audio-wrap"><audio controls="" src="//img.tukuppt.com/newpreview_music/09/00/31/5c89176e550ed57855.mp3"></audio></div><p></p>3月11日，中央结算公司支持中国国家铁路集团成功发行2021年第一期中国铁路建设债券。本期债券期限10年，发行规模150亿元，发行利率3.65%，认购倍数近2倍。国铁集团财务部副主任厉民一行莅临现场指导债券发行工作。公司总经理陈刚明会见，公司总监敖一帆，客服中心、运营中心、中债企业债券服务中心、中债估值公司等相关部门负责人陪同参会。</p><p></p><div class="media-wrap image-wrap align-center" style="text-align: center"><img id="123" title="截屏2021-02-24 下午2.26.05.png" alt="" src="https://boom-beiyan-sitemgt.oss-cn-beijing.aliyuncs.com/161725621760655f19e225d.jpeg" style="width:523px;height:392px"/></div><p></p><p>陈刚明总经理向厉民副主任一行介绍了公司全面深入参与中国债券市场培育和建设，积极打造债券市场运行、宏观政策实施、金融市场定价基准和债券市场对外开放主门户等四大平台的重要成果，并回顾了公司立足金融市场基础设施职责，长期服务企业债券市场发展，支持铁路建设债券发行等有关情况。厉民副主任一行参观了公司陈列室、估值中心及ECC指挥中心，充分肯定了公司的专业实力与服务水平，对公司长期提供债券发行、登记托管、交易结算、付息兑付、估值、担保品管理、信息披露等全生命周期服务，为铁路建设债券筹融资保驾护航表示感谢。厉民副主任表示，中央结算公司以支持国家重大战略为导向，坚守服务实体经济理念，不断加强服务能力，提升服务水平，切实保障铁路建设债券发行工作高效完成。</p><p></p><div class="media-wrap video-wrap"><video controls="" id="60629a3f76408b09a3fb86ea" title="1616988786758437.mp4" alt="" loop="" poster="https://boom-beiyan-sitemgt.oss-cn-beijing.aliyuncs.com/161725621760655f19e225d.jpeg" src="https://boom-beiyan-sitemgt.oss-cn-beijing.aliyuncs.com/16170843556062bfc3b8bf3.mp4"></video></div><p>陈刚明总经理向厉民副主任一行介绍了公司全面深入参与中国债券市场培育和建设，积极打造债券市场运行、宏观政策实施、金融市场定价基准和债券市场对外开放主门户等四大平台的重要成果，并回顾了公司立足金融市场基础设施职责，长期服务企业债券市场发展，支持铁路建设债券发行等有关情况。厉民副主任一行参观了公司陈列室、估值中心及ECC指挥中心，充分肯定了公司的专业实力</p>',
+                "content": '<p><div class="media-wrap audio-wrap"><audio controls="" src="//img.tukuppt.com/newpreview_music/09/00/31/5c89176e550ed57855.mp3"></audio></div><p></p>3月11日，中央结算公司支持中国国家铁路集团成功发行2021年第一期中国铁路建设债券。本期债券期限10年，发行规模150亿元，发行利率3.65%，认购倍数近2倍。国铁集团财务部副主任厉民一行莅临现场指导债券发行工作。公司总经理陈刚明会见，公司总监敖一帆，客服中心、运营中心、z止于至善企业债券服务中心、z止于至善估值公司等相关部门负责人陪同参会。</p><p></p><div class="media-wrap image-wrap align-center" style="text-align: center"><img id="123" title="截屏2021-02-24 下午2.26.05.png" alt="" src="https://boom-beiyan-sitemgt.oss-cn-beijing.aliyuncs.com/161725621760655f19e225d.jpeg" style="width:523px;height:392px"/></div><p></p><p>陈刚明总经理向厉民副主任一行介绍了公司全面深入参与中国市场培育和建设，积极打造债券市场运行、宏观政策实施、金融市场定价基准和债券市场对外开放主门户等四大平台的重要成果，并回顾了公司立足金融市场基础设施职责，长期服务企业债券市场发展，支持铁路建设债券发行等有关情况。厉民副主任一行参观了公司陈列室、估值中心及ECC指挥中心，充分肯定了公司的专业实力与服务水平，对公司长期提供债券发行、登记托管、交易结算、付息兑付、估值、担保品管理、信息披露等全生命周期服务，为铁路建设债券筹融资保驾护航表示感谢。厉民副主任表示，中央结算公司以支持国家重大战略为导向，坚守服务实体经济理念，不断加强服务能力，提升服务水平，切实保障铁路建设债券发行工作高效完成。</p><p></p><div class="media-wrap video-wrap"><video controls="" id="60629a3f76408b09a3fb86ea" title="1616988786758437.mp4" alt="" loop="" poster="https://boom-beiyan-sitemgt.oss-cn-beijing.aliyuncs.com/161725621760655f19e225d.jpeg" src="https://boom-beiyan-sitemgt.oss-cn-beijing.aliyuncs.com/16170843556062bfc3b8bf3.mp4"></video></div><p>陈刚明总经理向厉民副主任一行介绍了公司全面深入参与中国市场培育和建设，积极打造债券市场运行、宏观政策实施、金融市场定价基准和债券市场对外开放主门户等四大平台的重要成果，并回顾了公司立足金融市场基础设施职责，长期服务企业债券市场发展，支持铁路建设债券发行等有关情况。厉民副主任一行参观了公司陈列室、估值中心及ECC指挥中心，充分肯定了公司的专业实力</p>',
                 "e_content": "<p></p>",
                 "class_id": 2,
                 "source": "",
@@ -4829,7 +4778,7 @@ const proxy = {
                     },
                     {
                         "id": 2,
-                        "class_name": "中债e联使用咨询",
+                        "class_name": "使用咨询",
                         "describe": "2",
                         "create_at": 0,
                         "uid": 0,

@@ -28,6 +28,7 @@ const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 const postcssNormalize = require('postcss-normalize');
+const { getThemeVariables } = require('antd/dist/theme');
 
 const appPackageJson = require(paths.appPackageJson);
 
@@ -494,12 +495,18 @@ module.exports = function (webpackEnv) {
                 loader: 'less-loader',
                 options: {
                   lessOptions: {
-                    modifyVars: {
+                    // modifyVars: {
+                    //   'primary-color': '#216BFF',
+                    //   'link-color': '#1DA57A',
+                    //   'border-radius-base': '2px',
+                    // },
+                    modifyVars: getThemeVariables({
+                      // dark: true, // 开启暗黑模式
+                      // compact: true, // 开启紧凑模式
                       'primary-color': '#216BFF',
-                      // 'primary-color': 'red',
-                      'link-color': '#1DA57A',
+                      'link-color': '#216BFF',
                       'border-radius-base': '2px',
-                    },
+                    }),
                     javascriptEnabled: true,
                   }
                 }

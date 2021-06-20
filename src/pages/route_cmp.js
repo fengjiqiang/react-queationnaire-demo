@@ -8,9 +8,6 @@ import UnauthedUserList from '@/pages/userManage/UnauthedUserList.js'     // 用
 import UserFieldsSetting from '@/pages/userManage/UserFieldsSetting.js'    // 用户管理-用户字段设置
 import GroupManage from '@/pages/userManage/GroupManage.js'    // 用户管理-群组管理
 import PhoneList from '@/pages/userManage/PhoneList.js'
-//会议室设备
-import DeviceManage from './roomDevice/DeviceManage.js';
-import AdvertiseManage from './roomDevice/AdvertiseManage.js';
 
 import VideoManage from './VODManage/VideoManage.js';
 import VODManage from './VODManage/VODManage.js';
@@ -76,10 +73,6 @@ const obj = {
     'userManage.phoneList': PhoneList,
     // 我的会议--会议列表
     'userManage.authorityManage': AuthorityManage,
-
-    //会议室设备
-    'roomDevice.deviceManage': DeviceManage,
-    'roomDevice.advertiseManage': AdvertiseManage,
 
     'vod.videoManage': VideoManage,
     'vod.vodManage': VODManage,

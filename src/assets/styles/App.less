@@ -1,0 +1,148 @@
+@import './antdReset.less';
+@import './variable.less';
+body,html{
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+}
+#root{
+    height: 100%; 
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+    .vertical-body{
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .layoutWindow{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            overflow:hidden;
+            >.page-tabs{
+                height: 60px;
+            }
+            >div{
+                height: 100%;
+            }
+            >.area{
+                flex:1;
+                width:100%;
+                overflow-y: scroll;
+                display: flex;
+                >div{
+                    width:100%;
+                }
+            }
+        }
+    }
+    .menuContainer{
+        height: 100%;
+        border-right: 1px solid #DCDFE6;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .ant-menu{
+            .ant-menu-item-selected{
+                background-color: #DBE7FF;
+            }
+            background-color: @layoutBg-color;
+            .ant-menu-item-group{
+                >div.ant-menu-item-group-title{
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #333;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+   
+    .windowContainer{
+        height: 100%;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        .windowBreadcrumb{
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        .custom-page-title{
+            display: flex;
+            flex-direction: row;
+            font-size: 20px;
+            position: relative;
+            justify-content: space-between;
+            padding-bottom: 22px;
+            padding-left: 20px;
+            padding-right:40px;
+            border-bottom: 1px solid @layoutBorder-color;
+            .custom-page-title-btn{
+                border-radius: 2px;
+            }
+        }
+        .pageTitle{
+            padding-bottom: 22px;
+            padding-left: 20px;
+            border-bottom: 1px solid @layoutBorder-color;
+            >span{
+                font-size: 20px;
+                line-height: 33px;
+                color: #333;
+                font-weight: 500;
+                
+            }
+        }
+    }
+    .route-usermanage{
+        >div{
+            flex:1;
+            display: flex;
+        }
+    }
+    .route-accountManage{
+        >div{
+            flex:1;
+            display: flex;
+        }
+    }
+    .appHead{
+        width: 100%;
+        height: 70px;
+        background-color: #E5E5E5;
+        display: flex;
+        .companyLogo{
+            width: 240px;
+            border-right: 1px solid #DCDFE6;
+        }
+        .personInfo{
+            flex:1
+        }
+    }
+}
+.link-word{
+    cursor: pointer;
+}
+.floatBox{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 30;
+    background-color: @layoutBg-color;
+}
+.addItemColor{
+    color:@theme-color
+}
+

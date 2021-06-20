@@ -1,0 +1,65 @@
+.questionnair-editor {
+	width: 690px;
+	background: #fff;
+	// position: relative;
+	font-size: 14px;
+	border: 1px dashed #e5e5e5;
+	border-radius: 3px;
+	padding: 12px;
+	margin-bottom: 20px;
+	.questionnair-editor-inner {
+		// width: 690px;
+		margin: 0 auto;
+		color: #666;
+		.editor-type {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 20px;
+			.question-remove {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				cursor: pointer;
+				>img:hover {
+					content: url('../../../../../assets/images/questionnaire/delete_hover.png');
+					// background: url('../../../../../assets/images/questionnaire/delete_hover.png');
+				}
+				>span:hover {
+					color: #8f1d22;
+				}
+			}
+		}
+		.editor-row-title {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			margin-bottom: 12px;
+		}
+		.editor-row-option {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			margin-bottom: 12px;
+			.question-increase {
+				width: 24px;
+				height: 24px;
+				cursor: pointer;
+				margin-left: 8px;
+				&:hover {
+					content: url('../../../../../assets/images/questionnaire/increase_hover.png');
+				}
+			}
+			.question-decrease {
+				width: 24px;
+				height: 24px;
+				cursor: pointer;
+				margin-left: 8px;
+				&:hover {
+					content: url('../../../../../assets/images/questionnaire/decrease_hover.png');
+				}
+			}
+		}
+	}
+}

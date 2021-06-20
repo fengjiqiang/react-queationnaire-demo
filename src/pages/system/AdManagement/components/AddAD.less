@@ -1,0 +1,47 @@
+
+
+.meeting-appointment{
+    padding: 20px 10px;
+    .appointment-form{
+        .form-item-gropu{
+            display: flex !important;
+            .rl-formItem{
+                margin-right: 20px;
+                .ant-form-item-explain>div{
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    position: absolute;
+                }
+            }
+        }
+        .selected-user-container{
+            border: 1px dashed #DCDFE6;
+            padding: 12px;
+        }
+        .ant-picker-suffix{
+            cursor: pointer;
+            pointer-events: unset;
+        }
+    }
+    .argumentItem{
+        margin-top: 20px;
+        &.heng{
+            display: flex;
+            &>span{
+                display: block;
+                height: 40px;
+                line-height: 40px;
+                margin-left: 30px;
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+    .systemPic{
+        display: flex;
+        align-items: center;
+        .ant-upload-picture-card-wrapper{
+            width: 300px;
+        }
+    }
+}

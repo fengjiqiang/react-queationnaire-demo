@@ -1,0 +1,48 @@
+@pkg: img-crop;
+
+.@{pkg}-modal {
+    .ant-modal{
+        width: 600px !important;
+    }
+    .ant-modal-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center
+    }
+    .ant-modal-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        button.ant-btn{
+            margin-right: 20px;
+            &:hover{
+                color: #8F1D22;
+                border-color: #8F1D22;
+            }
+        }
+    }
+  .ant-modal-body {
+    // padding-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .@{pkg}-container {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 16px;
+  }
+  .@{pkg}-control {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+}

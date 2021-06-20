@@ -1,0 +1,36 @@
+
+@import '../../assets/styles/variable.less';
+.copyInviteModal{
+    .ant-modal-body{
+        margin: 0 !important;
+    }
+    .inviteChild{
+        display: flex;
+        flex-direction: column;
+        
+        .invite-body{
+            font-size: 16px;
+            color: #333;
+            flex: 1;
+            padding: 24px;
+            .active-text{
+                color: @theme-color;
+            }
+            .display-block{
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                .invite-item{
+                    line-height: 28px;
+                }
+            }
+        }
+        .invite-footer{
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid #DCDFE6;
+        }
+    }
+}

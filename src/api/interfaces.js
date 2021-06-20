@@ -22,13 +22,13 @@ const interfaces = {
     USER_LIST: '/api/v1/admin/user/list',                // 用户管理--获取用户列
     GET_USER_DETAIL: '/api/v1/admin/user/detail',        // 获取用户详情
     FilE_UPLOAD: '/api/v1/admin/resource/upload',
-    // USER_DELETE: '/api/v1/admin/user/remove',     // 用户管理-删除用户
-    // USER_ADD: '/api/v1/admin/user/add',   // 用户管理-添加用户
-    // USER_EDIT: '/api/v1/admin/user/edit',   // 用户管理-编辑用户
-    // USER_IMPORT: '/api/v1/admin/user/import',
-    // USER_APPROVE: '/api/v1/admin/user/approval',    // 用户认证-（批量）认证
-    // USER_EXPORT: '/api/v1/admin/user/batch-export',
-    // USER_SEND_EMAIL: '/api/v1/admin/user/batch-email',
+    USER_DELETE: '/api/v1/admin/user/remove',     // 用户管理-删除用户
+    USER_ADD: '/api/v1/admin/user/add',   // 用户管理-添加用户
+    USER_EDIT: '/api/v1/admin/user/edit',   // 用户管理-编辑用户
+    USER_IMPORT: '/api/v1/admin/user/import',
+    USER_APPROVE: '/api/v1/admin/user/approval',    // 用户认证-（批量）认证
+    USER_EXPORT: '/api/v1/admin/user/batch-export',
+    USER_SEND_EMAIL: '/api/v1/admin/user/batch-email',
 
     //固话簿
     PHONE_LIST: '/api/v1/admin/system/list',
@@ -39,12 +39,10 @@ const interfaces = {
     ROLE_LIST: '/api/v1/admin/role/list', //分页获取权限
     GET_SYSTEM_AUTH: '/api/v1/admin/role/auth',
     ROLE_CHANGE: '/api/v1/admin/role/user-link',
-    // ROLE_EDIT: '/api/v1/admin/role/edit',
-    // ROLE_ADD: '/api/v1/admin/role/add',
-    // ROLE_DELETE: '/api/v1/admin/role/destroy', 
-    // ROLE_SEARCH: true, //查看角色成员
-
-    //会议室设备
+    ROLE_EDIT: '/api/v1/admin/role/edit',
+    ROLE_ADD: '/api/v1/admin/role/add',
+    ROLE_DELETE: '/api/v1/admin/role/destroy', 
+    ROLE_SEARCH: true, //查看角色成员
 
     //广告管理
     ADVER_LIST: '/api/v1/admin/device-banner/lists',
@@ -120,34 +118,34 @@ const interfaces = {
 
     // 用户管理-字段设置
     FIELD_SETTING_LIST: '/api/v1/admin/setting/field-info',   // 字段设置-获取
-    // FIELD_SET: '/api/v1/admin/setting/field',   // 字段设置-更新
+    FIELD_SET: '/api/v1/admin/setting/field',   // 字段设置-更新
 
     // 群组管理
     // 群组管理-用户组列表
     GROUP_USER_LIST: '/api/v1/admin/group/list',   // 群组管理-用户组（成员）列表
-    // GROUNP_ADD: '/api/v1/admin/group/add',   // 群组管理-用户组创建
-    // GROUNP_EDIT: '/api/v1/admin/group/edit',   // 群组管理-用户组编辑
-    // GROUP_DELETE: '/api/v1/admin/group/remove',   // 群组管理-用户组删除
-    // GROUNP_PARTICIPANT_ADD: '/api/v1/admin/group/user-bind',   // 群组管理-用户组成员添加
-    // LWM_REMOVE_GROUNP_PARTICIPANT_ADD: '/api/v1/admin/group/user-unbind',   // 群组管理-用户组成员移除
-    // LWM_EDIT_GROUNP_PARTICIPANT_ADD: '/api/v1/admin/group/user-edit-bind',   // 群组管理-用户组成员修改群组
+    GROUNP_ADD: '/api/v1/admin/group/add',   // 群组管理-用户组创建
+    GROUNP_EDIT: '/api/v1/admin/group/edit',   // 群组管理-用户组编辑
+    GROUP_DELETE: '/api/v1/admin/group/remove',   // 群组管理-用户组删除
+    GROUNP_PARTICIPANT_ADD: '/api/v1/admin/group/user-bind',   // 群组管理-用户组成员添加
+    LWM_REMOVE_GROUNP_PARTICIPANT_ADD: '/api/v1/admin/group/user-unbind',   // 群组管理-用户组成员移除
+    LWM_EDIT_GROUNP_PARTICIPANT_ADD: '/api/v1/admin/group/user-edit-bind',   // 群组管理-用户组成员修改群组
 
     // 资讯
     // 资讯-资讯分类
     INFO_CLASSIFY_LIST: '/api/v1/admin/information-class/list',   // 资讯分类-列表
-    // INFO_CLASSIFY_ADD: '/api/v1/admin/information-class/add',   // 资讯分类-添加
-    // INFO_CLASSIFY_EDIT: '/api/v1/admin/information-class/edit',   // 资讯分类-编辑
-    // INFO_CLASSIFY_DELETE: '/api/v1/admin/information-class/delete',   // 资讯分类-删除
-    // INFO_CLASSIFY_HIDE: '/api/v1/admin/information-class/hide',   // 资讯分类-显示/隐藏
+    INFO_CLASSIFY_ADD: '/api/v1/admin/information-class/add',   // 资讯分类-添加
+    INFO_CLASSIFY_EDIT: '/api/v1/admin/information-class/edit',   // 资讯分类-编辑
+    INFO_CLASSIFY_DELETE: '/api/v1/admin/information-class/delete',   // 资讯分类-删除
+    INFO_CLASSIFY_HIDE: '/api/v1/admin/information-class/hide',   // 资讯分类-显示/隐藏
     INFO_CLASSIFY_ALL: '/api/v1/admin/information-class/list-all',   // 资讯分类-列表（不分页）
     // 资讯-资讯管理
     INFO_LIST: '/api/v1/admin/information/list',   // 资讯管理-列表
-    // INFO_ADD: '/api/v1/admin/information/add',   // 资讯管理-添加
-    // INFO_EDIT: '/api/v1/admin/information/edit',   // 资讯管理-编辑
+    INFO_ADD: '/api/v1/admin/information/add',   // 资讯管理-添加
+    INFO_EDIT: '/api/v1/admin/information/edit',   // 资讯管理-编辑
     INFO_DETAIL: '/api/v1/admin/information/detail',   // 资讯管理-详情
-    // INFO_DELETE: '/api/v1/admin/information/delete',   // 资讯管理-删除
-    // INFO_UPDATE_STATUS: '/api/v1/admin/information/update-status',   // 资讯管理-上/下架
-    // INFO_DOC_LIST: '/api/v1/admin/information-doc/list',   // 资讯管理-文档列表
+    INFO_DELETE: '/api/v1/admin/information/delete',   // 资讯管理-删除
+    INFO_UPDATE_STATUS: '/api/v1/admin/information/update-status',   // 资讯管理-上/下架
+    INFO_DOC_LIST: '/api/v1/admin/information-doc/list',   // 资讯管理-文档列表
     INFO_DOC_EDIT: '/api/v1/admin/information-doc/edit',   // 资讯管理-文档修改名称
     INFO_DOC_DELETE: '/api/v1/admin/information-doc/delete',   // 资讯管理-文档删除
     INFO_DOC_UPDATE_STATUS: '/api/v1/admin/information-doc/update-status',   // 资讯管理-文档是否可下载
@@ -158,13 +156,13 @@ const interfaces = {
     // 营销工具集-活动报名
     EVENT_LIST: '/api/v1/admin/action/lists',   // 获取活动列表
     EVENT_SHOW_FIELD: '/api/v1/admin/action/show-field',   // 获取显示字段
-    // EVENT_CREATE: '/api/v1/admin/action/create',   // 活动创建
-    // EVENT_EDIT: 'api/v1/admin/action/edit',   // 活动编辑
+    EVENT_CREATE: '/api/v1/admin/action/create',   // 活动创建
+    EVENT_EDIT: 'api/v1/admin/action/edit',   // 活动编辑
     EVENT_DETAIL: '/api/v1/admin/action/detail',   // 活动详情
-    // EVENT_DELETE: '/api/v1/admin/action/delete',   // 活动删除
-    // EVENT_UPDATE_TAG: '/api/v1/admin/action/update-tag',   // 活动上下架
-    // REGISTRATION_INFO: '/api/v1/admin/action/user-list',   // 报名信息
-    // REGISTRATION_INFO_EXPORT: '/api/v1/admin/action/export-user',   // 导出报名信息
+    EVENT_DELETE: '/api/v1/admin/action/delete',   // 活动删除
+    EVENT_UPDATE_TAG: '/api/v1/admin/action/update-tag',   // 活动上下架
+    REGISTRATION_INFO: '/api/v1/admin/action/user-list',   // 报名信息
+    REGISTRATION_INFO_EXPORT: '/api/v1/admin/action/export-user',   // 导出报名信息
     REGISTRATION_USER_GET: '/api/v1/admin/action/get-action-user',
     // 营销工具集-问答管理
     QUESTION_LIST: '/api/v1/admin/question/list',
@@ -235,49 +233,6 @@ const interfaces = {
     // ROLE_CHANGE: '/api/v2/corp/role/user/link',  // 修改角色
     // INVITE_RESEND: '/api/v2/corp/user/activateInvitation', // 未激活用户重新发送
     PERMISSION_LIST: '/api/v1/admin/user/permission', // 获取权限列表
-    // 企业管理-账户管理
-    // 企业管理-账户管理-账户信息
-    // ACCOUNT_INFO: '/api/v2/corp/account/info',    // 获取账户信息
-    // ACCOUNT_UPDATE: '/api/v2/corp/account/update',    // 编辑账户信息
-    // ACCOUNT_SELECTION: '/api/v2/corp/account/basic',   // 获取行业类型/企业规模
-    //CMP_LOGO_UPLOAD: '/api/v2/corp/account/avatar/update',   // 企业logo图片上传
-
-
-
-
-    //GET_DEVICE_LIST: '/api/v1/device/lists',                // 企业管理/会议室设备/设备管理--获取设备列表
-    //GET_DEVICE_DETAIL: '/api/v1/device/detail',             // 企业管理/会议室设备/设备管理--获取设备详情
-    //DEVICE_ADD: '/api/v1/device/create',                    // 企业管理/会议室设备/设备管理--添加设备
-    //DEVICE_DELETE: '/api/v1/device/delete',                 // 企业管理/会议室设备/设备管理--删除设备 -------------文档没有
-    //DEVICE_RESTART: '/api/v1/device/restart',               // 企业管理/会议室设备/设备管理--重启设备 -------------文档没有
-    //EDIT_DEVICE: '/api/v1/device/edit',                     // 企业管理/会议室设备/设备管理--编辑设备
-    //DEVICE_MEETING_LIST: '/api/v1/device/meetingList',      // 企业管理/会议室设备/设备管理--设备会议列表
-    //NET_CHECK: '/api/v1/device/diagnosis',                  // 企业管理/会议室设备/设备管理--网络诊断
-    //GET_LOG_LIST: '/api/v1/deviceLog/list',                 // 企业管理/会议室设备/设备管理--获取日志列表
-    //LOG_SUBMIT: '/api/v1/deviceLog/send',                   // 企业管理/会议室设备/设备管理--上传日志
-    //DEVICE_BIND_ADVERTISEMENT: '/api/v1/advert/bind',       // 企业管理/会议室设备/设备管理--设备绑定广告
-    //DEVICE_UNBIND_ADVERTISEMENT: '/api/v1/advert/unbind',   // 企业管理/会议室设备/设备管理--设备解除绑定广告
-
-
-    // BANNER_LIST: '/api/v1/banner/lists',                    // 企业管理/会议室设备/横幅管理--获取横幅列表
-    // BANNER_ADD: '/api/v1/banner/create',                    // 企业管理/会议室设备/横幅管理--添加横幅
-    // BANNER_EDIT: '/api/v1/banner/edit',                     // 企业管理/会议室设备/横幅管理--编辑横幅
-    // BANNER_DETAIL: '/api/v1/banner/detail',                 // 企业管理/会议室设备/横幅管理--横幅详情
-    // BANNER_STATUS: '/api/v1/banner/status',                 // 企业管理/会议室设备/横幅管理--设置横幅状态
-    // BANNER_DELETE: '/api/v1/banner/delete',                 // 企业管理/会议室设备/横幅管理--删除横幅
-    // BANNER_LIST_KEYWORD: '/api/v1/banner/titles',           // 企业管理/会议室设备/横幅管理--横幅关键字
-    // BANNER_RELATED: '/api/v1/banner/related',               // 企业管理/会议室设备/横幅管理--会议关联横幅
-
-    // ADVER_LIST: '/api/v1/advert/lists',                     // 企业管理/会议室设备/广告管理--广告列表
-    // ADVER_DETAIL: '/api/v1/advert/detail',                  // 企业管理/会议室设备/广告管理--广告详情
-    // ADVER_ADD: '/api/v1/advert/create',                     // 企业管理/会议室设备/广告管理--添加广告
-    // ADVER_EDIT: '/api/v1/advert/edit',                      // 企业管理/会议室设备/广告管理--编辑广告
-    // ADVER_STATUS: '/api/v1/advert/status',                  // 企业管理/会议室设备/广告管理--广告上下线
-    // ADVER_DELETE: '/api/v1/advert/delete',                  // 企业管理/会议室设备/广告管理--删除广告
-    // ADVER_IMG_UPLOAD: '/api/v1/advert/upload',              // 企业管理/会议室设备/广告管理--广告图片上传
-
-
-
 
     SEMINAR_LIST: '/api/v1/seminar/lists',              // 研讨会列表---------------------
     SEMINAR_DELETE: '/api/v1/seminar/delete',           // 删除/取消研讨会---------------------
@@ -334,17 +289,17 @@ const interfaces = {
     MEETING_CANCEL: '/api/v1/admin/meeting/delete',    //直播会议取消删除接口
 
     //系统管理
-    //SYSTEM_LOGINLOG: '/api/v1/admin/system/login-log',   //登录日志
-    //SYSTEM_HANDLELOG: '/api/v1/admin/system/operation-log',//操作日志
-    //SYSTEM_MESSAGEMAIL: '/api/v1/admin/system/email-log',   //邮件信息
-    //SYSTEM_MESSAGEMAIL_DELETE: '/api/v1/admin/system/email-log-del', //删除邮件信息
-    //SYSTEM_MESSAGENET: '/api/v1/admin/system/notify/list',          //站内消息
-    //SYSTEM_MESSAGENET_DELETE: '/api/v1/admin/system/notify/del',     //删除站内消息
-    //SYSTEM_MESSAGENET_PUBLISH: '/api/v1/admin/system/notify/publish', //站内消息发布
-    //SYSTEM_AD_UNLINELIST: '/api/v1/admin/system/banner/list',  //广告列表
-    //SYSTEM_AD_ADD: '/api/v1/admin/system/banner/create', //添加广告
-    //SYSTEM_AD_DELETE: '/api/v1/admin/system/banner/del',   //删除广告
-    //SYSTEM_AD_EDIT: '/api/v1/admin/system/banner/update',    //编辑广告
+    SYSTEM_LOGINLOG: '/api/v1/admin/system/login-log',   //登录日志
+    SYSTEM_HANDLELOG: '/api/v1/admin/system/operation-log',//操作日志
+    SYSTEM_MESSAGEMAIL: '/api/v1/admin/system/email-log',   //邮件信息
+    SYSTEM_MESSAGEMAIL_DELETE: '/api/v1/admin/system/email-log-del', //删除邮件信息
+    SYSTEM_MESSAGENET: '/api/v1/admin/system/notify/list',          //站内消息
+    SYSTEM_MESSAGENET_DELETE: '/api/v1/admin/system/notify/del',     //删除站内消息
+    SYSTEM_MESSAGENET_PUBLISH: '/api/v1/admin/system/notify/publish', //站内消息发布
+    SYSTEM_AD_UNLINELIST: '/api/v1/admin/system/banner/list',  //广告列表
+    SYSTEM_AD_ADD: '/api/v1/admin/system/banner/create', //添加广告
+    SYSTEM_AD_DELETE: '/api/v1/admin/system/banner/del',   //删除广告
+    SYSTEM_AD_EDIT: '/api/v1/admin/system/banner/update',    //编辑广告
     SYSTEM_AD_SORT: '/api/v1/admin/system/banner/sort-update',     //广告排序
     //SYSTEM_AD_UNUP: '/api/v1/admin/system/banner/update-show',    //广告上下线
     SYSTEM_AD_ROOM: '/api/v1/admin/meeting/select-list',       //待推广的直播or会议

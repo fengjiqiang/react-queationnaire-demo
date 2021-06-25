@@ -648,81 +648,81 @@ class PersonalInfo extends BaseCmp {
                         </div>,
                         labelStyle
                     },
-                    {
-                        label: '身份证正反照片',
-                        value: <div style={valueBtnStyle}>
-                            {
-                               !this.props.userInfo.positive_card && !this.props.userInfo.reverse_card ?
-                               <span>未上传</span>:
-                               <>
-                                    <img src={this.props.userInfo.positive_card || require('../../assets/images/card_positive.png')} alt='' style={{width: 202,height:118}}></img>
-                                    <img src={this.props.userInfo.reverse_card || require('../../assets/images/card_reverse.png')}  alt='' style={{width: 202,height:118, marginLeft:10}}></img>
-                               </>
+                    // {
+                    //     label: '身份证正反照片',
+                    //     value: <div style={valueBtnStyle}>
+                    //         {
+                    //            !this.props.userInfo.positive_card && !this.props.userInfo.reverse_card ?
+                    //            <span>未上传</span>:
+                    //            <>
+                    //                 <img src={this.props.userInfo.positive_card || require('../../assets/images/card_positive.png')} alt='' style={{width: 202,height:118}}></img>
+                    //                 <img src={this.props.userInfo.reverse_card || require('../../assets/images/card_reverse.png')}  alt='' style={{width: 202,height:118, marginLeft:10}}></img>
+                    //            </>
 
-                            }
-                        </div>,
-                        labelStyle,
-                    },
-                    {
-                        label: '公司在职证明',
-                        value: <div style={valueBtnStyle}>
-                            {
-                                this.props.userInfo.in_job ?
-                                <div style={{marginTop: -12}}>
-                                    <CmpFile 
-                                        src={this.props.userInfo.in_job}
-                                        name={this.props.userInfo.in_job_desc}
-                                        editable={false}
-                                        click={()=>{
-                                            window.open(this.props.userInfo.in_job);
-                                        }}
-                                    />
-                                </div>:
-                                <span>未上传</span>
-                            }
-                        </div>,
-                        labelStyle,
-                    },
-                    {
-                        label: '工卡及名片同框照片',
-                        value: <div style={valueBtnStyle}>
-                            {
-                                this.props.userInfo.job_card ? 
-                                <div style={{marginTop: -12}}>
-                                    <CmpFile 
-                                        src={this.props.userInfo.job_card}
-                                        name={this.props.userInfo.job_card_desc}
-                                        editable={false}
-                                        click={()=>{
-                                            window.open(this.props.userInfo.job_card);
-                                        }}
-                                    />
-                                </div>:
-                                <span>未上传</span>
-                            }
-                        </div>,
-                        labelStyle,
-                    },
-                    {
-                        label: '其他有效证件',
-                        value: <div style={valueBtnStyle}>
-                            {
-                                this.props.userInfo.other ? 
-                                <div style={{marginTop: -12}}>
-                                    <CmpFile 
-                                        src={this.props.userInfo.other}
-                                        name={this.props.userInfo.other_desc}
-                                        editable={false}
-                                        click={()=>{
-                                            window.open(this.props.userInfo.other);
-                                        }}
-                                    />
-                                </div>: 
-                                <span>未上传</span>
-                            }
-                        </div>,
-                        labelStyle,
-                    }
+                    //         }
+                    //     </div>,
+                    //     labelStyle,
+                    // },
+                    // {
+                    //     label: '公司在职证明',
+                    //     value: <div style={valueBtnStyle}>
+                    //         {
+                    //             this.props.userInfo.in_job ?
+                    //             <div style={{marginTop: -12}}>
+                    //                 <CmpFile 
+                    //                     src={this.props.userInfo.in_job}
+                    //                     name={this.props.userInfo.in_job_desc}
+                    //                     editable={false}
+                    //                     click={()=>{
+                    //                         window.open(this.props.userInfo.in_job);
+                    //                     }}
+                    //                 />
+                    //             </div>:
+                    //             <span>未上传</span>
+                    //         }
+                    //     </div>,
+                    //     labelStyle,
+                    // },
+                    // {
+                    //     label: '工卡及名片同框照片',
+                    //     value: <div style={valueBtnStyle}>
+                    //         {
+                    //             this.props.userInfo.job_card ? 
+                    //             <div style={{marginTop: -12}}>
+                    //                 <CmpFile 
+                    //                     src={this.props.userInfo.job_card}
+                    //                     name={this.props.userInfo.job_card_desc}
+                    //                     editable={false}
+                    //                     click={()=>{
+                    //                         window.open(this.props.userInfo.job_card);
+                    //                     }}
+                    //                 />
+                    //             </div>:
+                    //             <span>未上传</span>
+                    //         }
+                    //     </div>,
+                    //     labelStyle,
+                    // },
+                    // {
+                    //     label: '其他有效证件',
+                    //     value: <div style={valueBtnStyle}>
+                    //         {
+                    //             this.props.userInfo.other ? 
+                    //             <div style={{marginTop: -12}}>
+                    //                 <CmpFile 
+                    //                     src={this.props.userInfo.other}
+                    //                     name={this.props.userInfo.other_desc}
+                    //                     editable={false}
+                    //                     click={()=>{
+                    //                         window.open(this.props.userInfo.other);
+                    //                     }}
+                    //                 />
+                    //             </div>: 
+                    //             <span>未上传</span>
+                    //         }
+                    //     </div>,
+                    //     labelStyle,
+                    // }
 
                 ]
             },  

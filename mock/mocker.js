@@ -35,27 +35,27 @@ const menu = [
                 menu_route: '/userManage/authorityManage',
                 tag: 'authorityManage',
             },
-            {
-                name: '群组管理',
-                menu_icon: '',
-                menu_code: 'userManage.groupManage',
-                menu_route: '/userManage/groupManage',
-                tag: 'grounpManage',
-            },
-            {
-                name: '用户字段设置',
-                menu_icon: '',
-                menu_code: 'userManage.userFieldsSetting',
-                menu_route: '/userManage/userFieldsSetting',
-                tag: 'userFieldsSetting',
-            },
-            {
-                name: '固定电话簿',
-                menu_icon: '',
-                menu_code: 'userManage.phoneList',
-                menu_route: '/userManage/phoneList',
-                tag: 'phoneList'
-            }
+            // {
+            //     name: '群组管理',
+            //     menu_icon: '',
+            //     menu_code: 'userManage.groupManage',
+            //     menu_route: '/userManage/groupManage',
+            //     tag: 'grounpManage',
+            // },
+            // {
+            //     name: '用户字段设置',
+            //     menu_icon: '',
+            //     menu_code: 'userManage.userFieldsSetting',
+            //     menu_route: '/userManage/userFieldsSetting',
+            //     tag: 'userFieldsSetting',
+            // },
+            // {
+            //     name: '固定电话簿',
+            //     menu_icon: '',
+            //     menu_code: 'userManage.phoneList',
+            //     menu_route: '/userManage/phoneList',
+            //     tag: 'phoneList'
+            // }
         ]
     },
     // {
@@ -170,49 +170,49 @@ const menu = [
             },
         ]
     },
-    {
-        name: "系统",
-        menu_code: "system",
-        menu_icon: "",
-        tag: 'system',
-        children: [
-            {
-                name: "邮箱信息",
-                menu_code: "system.mail",
-                menu_icon: "",
-                menu_route: "/system/messageManagementMail",
-                tag: 'messageManagementMail'
-            },
-            {
-                name: "站内消息",
-                menu_code: "system.net",
-                menu_icon: "",
-                menu_route: "/system/messageManagementNet",
-                tag: 'messageManagementNet'
-            },
-            {
-                name: "广告管理",
-                menu_code: "system.AdManagement",
-                menu_icon: "",
-                menu_route: "/system/AdManagement",
-                tag: 'AdManagement',
-            },
-            {
-                name: "操作日志",
-                menu_code: "system.handleLog",
-                menu_icon: "",
-                menu_route: "/system/handleLog",
-                tag: 'handleLog',
-            },
-            {
-                name: "登录日志",
-                menu_code: "system.loginLog",
-                menu_icon: "",
-                menu_route: "/system/loginLog",
-                tag: 'loginLog',
-            }
-        ]
-    },
+    // {
+    //     name: "系统",
+    //     menu_code: "system",
+    //     menu_icon: "",
+    //     tag: 'system',
+    //     children: [
+    //         {
+    //             name: "邮箱信息",
+    //             menu_code: "system.mail",
+    //             menu_icon: "",
+    //             menu_route: "/system/messageManagementMail",
+    //             tag: 'messageManagementMail'
+    //         },
+    //         {
+    //             name: "站内消息",
+    //             menu_code: "system.net",
+    //             menu_icon: "",
+    //             menu_route: "/system/messageManagementNet",
+    //             tag: 'messageManagementNet'
+    //         },
+    //         {
+    //             name: "广告管理",
+    //             menu_code: "system.AdManagement",
+    //             menu_icon: "",
+    //             menu_route: "/system/AdManagement",
+    //             tag: 'AdManagement',
+    //         },
+    //         {
+    //             name: "操作日志",
+    //             menu_code: "system.handleLog",
+    //             menu_icon: "",
+    //             menu_route: "/system/handleLog",
+    //             tag: 'handleLog',
+    //         },
+    //         {
+    //             name: "登录日志",
+    //             menu_code: "system.loginLog",
+    //             menu_icon: "",
+    //             menu_route: "/system/loginLog",
+    //             tag: 'loginLog',
+    //         }
+    //     ]
+    // },
     {
         name: "营销工具集",
         menu_code: "market",
@@ -4255,6 +4255,31 @@ const proxy = {
         })
     },
     // 资讯
+    // 列表（不分页）
+    'GET /api/v1/admin/information-class/list-all': (req, res) => {
+        res.send({
+            "code": 200,
+            "data": [
+                {
+                    "id": 1,
+                    "name": "qqqq",
+                    "e_name": "zzz"
+                },
+                {
+                    "id": 2,
+                    "name": "zzzz",
+                    "e_name": ""
+                },
+                {
+                    "id": 3,
+                    "name": "qqqqq",
+                    "e_name": ""
+                }
+            ],
+            "extra": [],
+            "msg": "请求成功"
+        })
+    },
     // 资讯分类-列表
     'GET /api/v1/admin/information-class/list': (req, res) => {
         res.send({
